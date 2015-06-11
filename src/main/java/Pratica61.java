@@ -13,27 +13,27 @@ import utfpr.ct.dainf.if62c.pratica.Jogador;
 public class Pratica61 {
     public static void main(String[] args) {
         
-        Time tabajara = new Time();
-        Time pelezios = new Time();
+        Time time1 = new Time();
+        Time time2 = new Time();
         
-        tabajara.addJogador("Meio Campo", new Jogador(2,"Jailson"));
-        tabajara.addJogador("Zagueiro", new Jogador(7,"Jairson"));
-        tabajara.addJogador("Atacante", new Jogador(11,"Jaisson"));
+        time1.addJogador("Meio Campo", new Jogador(2,"Jailson"));
+        time1.addJogador("Zagueiro", new Jogador(7,"Jairson"));
+        time1.addJogador("Atacante", new Jogador(11,"Jaisson"));
         
-        pelezios.addJogador("Zagueiro", new Jogador(2,"Roberson"));
-        pelezios.addJogador("Meio Campo", new Jogador(9,"Robervaldo"));
-        pelezios.addJogador("Atacante", new Jogador(10,"Robernilson"));
+        time2.addJogador("Zagueiro", new Jogador(2,"Roberson"));
+        time2.addJogador("Meio Campo", new Jogador(9,"Robervaldo"));
+        time2.addJogador("Atacante", new Jogador(10,"Robernilson"));
         
-        System.out.println("Posição"+"\t\t"+"tabajara"+"\t"+"pelezios");
-        for (int i = 0; i < tabajara.getJogadores().keySet().size(); i++) {
-            for (int j = 0; j < pelezios.getJogadores().keySet().size(); j++) {
-                if(tabajara.getJogadores().keySet().toArray()[i].equals(pelezios.getJogadores().keySet().toArray()[j])){
-                    String s = tabajara.getJogadores().keySet().toArray()[i].toString();
-                    System.out.print(tabajara.getJogadores().keySet().toArray()[i].toString());
+        System.out.println("Posição"+"\t\t"+"Time 1"+"\t\t"+"Time 2");
+        for (int i = 0; i < time1.getJogadores().keySet().size(); i++) {
+            for (int j = 0; j < time2.getJogadores().keySet().size(); j++) {
+                if(time1.getJogadores().keySet().toArray()[i].equals(time2.getJogadores().keySet().toArray()[j])){
+                    String s = time1.getJogadores().keySet().toArray()[i].toString();
+                    System.out.print(time1.getJogadores().keySet().toArray()[i].toString());
                     System.out.print("\t");
-                    System.out.print(tabajara.getJogadores().get(s).toString());
+                    System.out.print(time1.getJogadores().get(s).toString());
                     System.out.print("\t");
-                    System.out.println(pelezios.getJogadores().get(s).toString());
+                    System.out.println(time2.getJogadores().get(s).toString());
                 }
             }
             
