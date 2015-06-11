@@ -1,5 +1,6 @@
 
-import utfpr.dainf.if62c.pratica.*;
+import utfpr.ct.dainf.if62c.pratica.Time;
+import utfpr.ct.dainf.if62c.pratica.Jogador;
 
 /**
  * UTFPR - Universidade Tecnológica Federal do Paraná
@@ -11,24 +12,17 @@ import utfpr.dainf.if62c.pratica.*;
  */
 public class Main {
     public static void main(String[] args) {
-        Jogador j1 = new Jogador(2,"Jailson");
-        Jogador j2 = new Jogador(7,"Jairson");
-        Jogador j3 = new Jogador(11,"Jaisson");
-        
-        Jogador j4 = new Jogador(2,"Roberson");
-        Jogador j5 = new Jogador(9,"Robervaldo");
-        Jogador j6 = new Jogador(10,"Robernilson");
         
         Time tabajara = new Time();
         Time pelezios = new Time();
         
-        tabajara.addJogador("Meio Campo", j1);
-        tabajara.addJogador("Zagueiro", j2);
-        tabajara.addJogador("Atacante", j3);
+        tabajara.addJogador("Meio Campo", new Jogador(2,"Jailson"));
+        tabajara.addJogador("Zagueiro", new Jogador(7,"Jairson"));
+        tabajara.addJogador("Atacante", new Jogador(11,"Jaisson"));
         
-        pelezios.addJogador("Zagueiro", j4);
-        pelezios.addJogador("Meio Campo", j5);
-        pelezios.addJogador("Atacante", j6);
+        pelezios.addJogador("Zagueiro", new Jogador(2,"Roberson"));
+        pelezios.addJogador("Meio Campo", new Jogador(9,"Robervaldo"));
+        pelezios.addJogador("Atacante", new Jogador(10,"Robernilson"));
         
         System.out.println("Posição"+"\t\t"+"tabajara"+"\t"+"pelezios");
         for (int i = 0; i < tabajara.getJogadores().keySet().size(); i++) {

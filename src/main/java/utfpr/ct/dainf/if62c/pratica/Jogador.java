@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package utfpr.dainf.if62c.pratica;
+package utfpr.ct.dainf.if62c.pratica;
 
 /**
  *
